@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="fundo.css">
+</head>
+
+<body>
+    <section>
+        <form>
+            <h1>Início</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" placeholder="Login" id="login" required>
+
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="Senha" placeholder="Senha" id="senha">
+
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox" id="mostrar senha">Mostrar Senha</label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <input type="submit" value="Conectar" id="botao" onclick="logar(); return false">
+            <div class="register">
+                <p>Não tenho uma conta: <a href="#">Registre-se</a></p>
+            </div>
+        </form>
+    </section>
+    <script>
+
+        function logar() {
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin") {
+                alert("Sucesso");
+                location.href = 'home.html';
+            } else {
+                alert("Erro no login! Usuário ou senha incorretos!!!");
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
