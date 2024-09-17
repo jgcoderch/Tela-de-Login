@@ -122,3 +122,9 @@ button:hover {
 .register p a:hover {
     text-decoration: underline;
 }
+#showPasswordCheckbox {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; /* Maior margem para espaçar o checkbox do texto */
+    cursor: pointer;
+}
